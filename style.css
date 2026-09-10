@@ -1,0 +1,130 @@
+ /* --- Reset Básico e Fontes --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+    --principal: #349DFF;
+    --secundaria: #FFE100;
+    --descricao: #2C3E50;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #ffffff;
+  color: var(--descricao);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* CABEÇALHO */
+header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 24px;
+}
+
+nav {
+  background-color: #f2f2f2;
+  border-radius: 40px;
+  padding: 8px 16px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+nav ul li {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--descricao);
+  cursor: pointer;
+  padding: 6px 12px;
+  position: relative;
+  transition: color 0.2s ease;
+}
+
+/* INÍCIO */
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 1280px;
+  padding: 40px 20px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* LOGO */
+.logo {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 24px;
+}
+
+.logo h1 {
+  font-size: 72px;
+  font-weight: 800;
+  color: var(--principal);
+  position: relative;
+  z-index: 2;
+  letter-spacing: -1.5px;
+}
+
+.raio {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+  width: 180px;
+  height: auto;
+  pointer-events: none;
+}
+
+/* SUBTITULO */
+.subtitulo {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--descricao);
+  max-width: 600px;
+  margin-bottom: 40px;
+  line-height: 1.4;
+  z-index: 1;
+}
+
+.botao {
+  display: inline-block;
+  background-color: var(--principal);
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 14px 32px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.25);
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.botao {
+  background-color: #2563eb;
+  transform: translateY(-2px);
+}
+
+
