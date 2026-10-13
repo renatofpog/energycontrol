@@ -1,10 +1,10 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>EnergyControl</title>
-
+    <link rel="shortcut icon" href="./assets/raio.svg" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -25,19 +25,61 @@
     </header>
 
     <main>
-      <div class="container">
-        <!-- Container para alinhar e sobrepor o raio com o título -->
-        <div class="logo">
-          <img src="./assets/raio.svg" alt="Raio Amarelo" class="raio" />
-          <h1>EnergyControl</h1>
+      <section id="home">
+        <div class="container">
+          <div class="logo">
+            <img src="./assets/raio.svg" alt="Raio Amarelo" class="raio" />
+            <h1>EnergyControl</h1>
+          </div>
+
+          <p class="subtitulo">
+            Organize o consumo de energia do seu negócio de forma rápida e
+            inteligente.
+          </p>
+          <a href="#" class="botao">Conhecer o Projeto</a>
         </div>
+      </section>
 
-        <p class="subtitulo">
-          Organize o consumo de energia do seu negócio de forma rápida e inteligente.
-        </p>
+      <section id="como_funciona">
+        <div class="container cards-container">
+          <div class="card">
+            <img src="./assets/monitoramento.svg" alt="Monitoramento" />
+            <h3>Monitoramento</h3>
+            <p>Controle quanto você gasta de energia de forma eficiente.</p>
+          </div>
 
-        <a href="#" class="botao">Conhecer o Projeto</a>
-      </div>
+          <div class="card">
+            <img src="./assets/inteligente.svg" alt="Análise" />
+            <h3>Análise</h3>
+            <p>Analise e compare gastos entre períodos.</p>
+          </div>
+
+          <div class="card">
+            <img src="./assets/faturamento.svg" alt="Economia" />
+            <h3>Economia</h3>
+            <p>
+              Controle seus gastos de forma inteligente e economize no fim do
+              mês.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="sobre">
+        <div class="container sobre-container">
+          <h2>Quem Somos</h2>
+          <p>
+            Somos uma equipe de desenvolvedores formada por 6 pessoas do Centro
+            Universitário FACENS. Focados em desenvolver soluções para
+            nossos sistemas, inspirados pela capacidade de inovar cada vez mais no
+            mercado. Criamos um App pensando no pequeno empreendedor que não tem 
+            experiência no controle de gastos energéticos.
+            <br>
+            Este foi um projeto desenvolvido para a disciplina de UPX-1 do 2º
+            Semestre, no curso de Análise e Desenvolvimento de Sistemas.
+          </p>
+        </div>
+      </section>
     </main>
   </body>
 </html>
